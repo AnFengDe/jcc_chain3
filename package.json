@@ -45,14 +45,14 @@
     "gulp": "^5.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^0.5.3",
-    "gulp-streamify": "^1.0.2",
-    "gulp-uglify": "^3.0.2",
+    "through2": "^4.0.2",
+    "uglify-js": "^3.19.3",
     "jszip": "^3.10.1",
     "localstorejs": "^0.1.9",
     "mocha": "^11.7.5",
     "node-safe-filesaver": "^0.1.0",
     "sandboxed-module": "^2.0.4",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl": "^3.0.0"
   },
   "scripts": {
     "build": "gulp",
