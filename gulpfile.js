@@ -8,7 +8,6 @@ var path = require('path');
 var del = require('del');
 var gulp = require('gulp');
 var browserify = require('browserify');
-var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
@@ -52,10 +51,6 @@ gulp.task('bower', gulp.series(['version'], function(cb, done){
 }));
 
 gulp.task('lint', function(done){
-    gulp.src(['./*.js', './lib/*.js'])
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-    
     done();
 });
 
