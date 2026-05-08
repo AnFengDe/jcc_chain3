@@ -34,7 +34,6 @@ function toVinyl(filename) {
     }));
   });
 }
-var bower = require('bower');
 var replace = require('gulp-replace');
 
 var DEST = path.join(__dirname, 'dist/');
@@ -54,9 +53,6 @@ gulp.task('version', function(done){
     gulp.src(['./package.json'])
       .pipe(replace(/\"version\"\: \"([\.0-9]*)\"/, '"version": "'+ version.version + '"'))
       .pipe(gulp.dest('./')),
-    gulp.src(['./bower.json'])
-      .pipe(replace(/\"version\"\: \"([\.0-9]*)\"/, '"version": "'+ version.version + '"'))
-      .pipe(gulp.dest('./')),
     gulp.src(['./package.js'])
       .pipe(replace(/version\: \'([\.0-9]*)\'/, "version: '"+ version.version + "'"))
       .pipe(gulp.dest('./'))
@@ -69,14 +65,6 @@ gulp.task('version', function(done){
     s.on('error', done);
   });
 });
-
-gulp.task('bower', gulp.series(['version'], function(cb, done){
-    bower.commands.install().on('end', function (installed){
-        console.log(installed);
-        cb();
-        done();
-    });
-}));
 
 gulp.task('lint', function(done){
     done();
