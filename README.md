@@ -29,7 +29,7 @@ LICENSE file for more details.
 * v0.1.11 Added scs method getMicroChainInfo to work with subchain explorer.
 * v0.1.10 Added vnode and scs methods to work with MicroChains.
 * v0.1.9 Added new method to get ip for local node.
-* v0.1.8 Moved git repository to https://github.com/MOACChain/chain3 and fixed some bugs.
+* v0.1.8 Moved git repository to https://github.com/AnFengDe/jcc_chain3 and fixed some bugs.
 * v0.1.7 Fixed uneven signature R & S.
 * v0.1.6 A complete package with all tests.
 * v0.1.4 First compatible version with MOAC chain.
@@ -49,19 +49,19 @@ More information is in Chain3.md or [MOAC wiki](https://github.com/MOACChain/moa
 ### Node.js
 
 ```bash
-npm install chain3
+npm install jcc_chain3
 ```
 
 ### As Browser module
 Bower
 
 ```bash
-bower install chain3
+bower install jcc_chain3
 ```
 ### Meteor.js
 
 ```bash
-meteor add moaclib:chain3
+meteor add moaclib:jcc_chain3
 ```
 
 
@@ -71,7 +71,7 @@ meteor add moaclib:chain3
 Use the `chain3` object directly from global namespace:
 
 ```js
-var Chain3 = require('chain3');
+var Chain3 = require('jcc_chain3');
 var chain3 = new Chain3();
 console.log(chain3); // {mc: .., net: ...} // it's here!
 ```
@@ -229,6 +229,6 @@ Example codes to sign a message using MOAC network and verify the signature.
 
 [browserify-cryptojs](https://github.com/fahad19/crypto-js/) v0.3.1
 
-[repo]: https://github.com/MOACChain/chain3
-[npm-url]: https://npmjs.org/package/chain3
+[repo]: https://github.com/AnFengDe/jcc_chain3
+[npm-url]: https://npmjs.org/package/jcc_chain3
 

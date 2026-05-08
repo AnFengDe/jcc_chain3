@@ -1,5 +1,5 @@
 {
-  "name": "chain3",
+  "name": "jcc_chain3",
   "namespace": "MOAC",
   "version": "0.1.23",
   "description": "MOAC JavaScript API, middleware to talk to a MOAC node over RPC",
@@ -63,11 +63,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MOACChain/chain3/releases"
+    "url": "https://github.com/AnFengDe/jcc_chain3/releases"
   },
-  "homepage": "https://github.com/MOACChain/chain3",
+  "homepage": "https://github.com/AnFengDe/jcc_chain3",
   "bugs": {
-    "url": "https://github.com/MOACChain/chain3/issues"
+    "url": "https://github.com/AnFengDe/jcc_chain3/issues"
   },
   "keywords": [
     "MOAC",
@@ -79,7 +79,7 @@
     {
       "name": "MOAC Tech Inc.",
       "email": "support@moac.io",
-      "url": "https://github.com/MOACChain/chain3"
+      "url": "https://github.com/AnFengDe/jcc_chain3"
     }
   ],
   "license": "LGPL-3.0",

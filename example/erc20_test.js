@@ -8,7 +8,7 @@
 3. display the token balances of the accounts.
 */
 
-// var Chain3 = require('chain3');
+// var Chain3 = require('jcc_chain3');
 var Chain3 = require('../index.js');
 var chain3 = new Chain3();
 

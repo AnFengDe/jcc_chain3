@@ -7,9 +7,9 @@ name: Javascript API
 MOAC JavaScript API was built for MOAC chain. It was developed based on the Ethereum web3.js API routines and made some methods compatiable with the web3.js methods so the users can easily move their Ðapp to MOAC chain. In
 Chain3 also supported additional methods for MOAC platform, such as VNODE and SCS methods.
 
-To make a Ðapp work on MOAC network, user should use the `chain3` object provided by the [chain3.js library](https://github.com/MOACChain/chain3). It communicates to a local MOAC  node through [JSON RPC](https://github.com/MOACChain/moac-core/wiki/JSON-RPC). chain3.js works with any MOAC VNODE and SCS, which exposes an RPC layer.
+To make a Ðapp work on MOAC network, user should use the `chain3` object provided by the [chain3.js library](https://github.com/AnFengDe/jcc_chain3). It communicates to a local MOAC  node through [JSON RPC](https://github.com/MOACChain/moac-core/wiki/JSON-RPC). chain3.js works with any MOAC VNODE and SCS, which exposes an RPC layer.
 
-`chain3` contains the `mc` object - `chain3.mc` (for specifically MOAC Mother blockchain interactions), and the `scs` object - `chain3.scs` (for MicroChain interactions). Over time we'll introduce other objects for each of the other chain3 protocols. Working [examples can be found here](https://github.com/MOACChain/chain3/tree/master/example).
+`chain3` contains the `mc` object - `chain3.mc` (for specifically MOAC Mother blockchain interactions), and the `scs` object - `chain3.scs` (for MicroChain interactions). Over time we'll introduce other objects for each of the other chain3 protocols. Working [examples can be found here](https://github.com/AnFengDe/jcc_chain3/tree/master/example).
 
 
 ## Using callbacks
@@ -188,7 +188,7 @@ The `chain3` object provides all methods.
 ##### Example
 
 ```js
-var Chain3 = require('chain3');
+var Chain3 = require('jcc_chain3');
 // create an instance of chain3 using the HTTP provider.
 var chain3 = new Chain3(new Chain3.providers.HttpProvider("http://localhost:8545"));
 ```
@@ -1856,7 +1856,7 @@ Returns GlobalRegistrar object.
 
 ##### Usage
 
-see [namereg](https://github.com/MOACChain/chain3.js/blob/master/example/namereg.html) example
+see [namereg](https://github.com/AnFengDe/jcc_chain3.js/blob/master/example/namereg.html) example
 
 ***
 

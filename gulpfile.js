@@ -39,8 +39,8 @@ var replace = require('gulp-replace');
 
 var DEST = path.join(__dirname, 'dist/');
 var src = 'index';
-var dst = 'chain3';
-var lightDst = 'chain3-light';
+var dst = 'jcc_chain3';
+var lightDst = 'jcc_chain3-light';
 
 var browserifyOptions = {
     debug: true,
@@ -88,7 +88,7 @@ gulp.task('clean', gulp.series(['lint'], function(cb) {
 
 gulp.task('light', function () {
     return browserify(browserifyOptions)
-        .require('./' + src + '.js', {expose: 'chain3'})
+        .require('./' + src + '.js', {expose: 'jcc_chain3'})
         .ignore('bignumber.js')
         .require('./lib/utils/browser-bn.js', {expose: 'bignumber.js'}) // fake bignumber.js
         .add('./' + src + '.js')
@@ -103,7 +103,7 @@ gulp.task('light', function () {
 
 gulp.task('standalone', function () {
     return browserify(browserifyOptions)
-        .require('./' + src + '.js', {expose: 'chain3'})
+        .require('./' + src + '.js', {expose: 'jcc_chain3'})
         .require('bignumber.js') // expose it to dapp users
         .add('./' + src + '.js')
         .ignore('crypto')
