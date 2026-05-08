@@ -1,7 +1,7 @@
 /* jshint ignore:start */
 Package.describe({
     name: 'moaclib:jcc_chain3',
-    version: '0.1.25',
+    version: '0.1.26',
     summary: 'MOAC JavaScript API, middleware to talk to a MOAC node over RPC test version',
     git: 'https://github.com/AnFengDe/jcc_chain3',
     // By default, Meteor will default to using README.md for documentation.
