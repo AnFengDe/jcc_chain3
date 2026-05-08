@@ -19,19 +19,17 @@
     "hash.js": "^1.1.7",
     "lodash": "^4.17.21",
     "safe-buffer": "^5.2.1",
-    "solc": "^0.8.35",
     "sprintf-js": "^1.1.2",
     "underscore": "^1.10.2",
     "utf8": "^2.1.1",
     "xhr2": "^0.2.0",
-    "xmlhttprequest": "*"
+    "xmlhttprequest": "^1.7.0"
   },
   "browser": {
     "xmlhttprequest": "./lib/utils/browser-xhr.js"
   },
   "devDependencies": {
     "body-parser": "^1.19.0",
-    "bower": "^1.8.8",
     "browserify": "^16.5.1",
     "browserify-cryptojs": "^0.3.1",
     "c8": "^11.0.0",
@@ -49,9 +47,10 @@
     "uglify-js": "^3.19.3",
     "jszip": "^3.10.1",
     "localstorejs": "^0.1.9",
-    "mocha": "^11.7.5",
+    "mocha": "11.3.0",
     "node-safe-filesaver": "^0.1.0",
     "sandboxed-module": "^2.0.4",
+    "solc": "^0.8.35",
     "vinyl": "^3.0.0"
   },
   "scripts": {
@@ -84,7 +83,8 @@
   ],
   "license": "LGPL-3.0",
   "overrides": {
-    "serialize-javascript": "7.0.5"
+    "serialize-javascript": "7.0.5",
+    "diff": "8.0.3"
   },
   "c8": {
     "reporter": ["text", "lcov"],

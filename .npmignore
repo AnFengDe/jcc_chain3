@@ -1,0 +1,13 @@
+.claude/
+coverage/
+debug/
+scs/
+.node*
+.npm/*
+.vscode/*
+.DS_Store
+dist/
+bower.json
+package.js
+package-lock.json
+example/test.sol

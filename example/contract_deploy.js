@@ -22,11 +22,12 @@ if(cmds != null && cmds.length == 3){
     file: content
   };
 
-//A test account on MOAC testnet 101
-//user should replace this account with his own add and key
+// IMPORTANT: Replace with your own account before running.
+// This is a publicly-known testnet account — NOT a production secret.
+// The key below is published in the source for development convenience only.
 var tacct = {
-  "addr": "0x7312F4B8A4457a36827f185325Fd6B66a3f8BB8B", 
-  "key": "0xc75a5f85ef779dcf95c651612efb3c3b9a6dfafb1bb5375905454d9fc8be8a6b"
+  "addr": "<YOUR_MOAC_TESTNET_ADDRESS>",
+  "key": "<YOUR_MOAC_TESTNET_PRIVATE_KEY>"
 };
 
   var output = solc.compile({sources: input}, 1);
